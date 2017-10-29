@@ -1,0 +1,10 @@
+{
+  "name": "pickler",
+  "version": "0.0.1",
+  "description": "Turn your Jest+Enzyme+React unit tests into Gherkin",
+  "main": "src/index.js",
+  "repository": "https://github.com/pcklr/pickler.git",
+  "author": "Ryan Schumacher <j.r.schumacher@gmail.com>",
+  "contributors": ["Ryan Schumacher <j.r.schumacher@gmail.com>", "Kyle Doud"],
+  "license": "MIT"
+}
