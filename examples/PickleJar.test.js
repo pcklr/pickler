@@ -1,16 +1,3 @@
-# pickler
-
-Turn your React+Jest+Enzyme unit tests into Gherkin.
-
-# Overview
-
-Pickler is a tool which allows one to convert their unit tests into Gherkin. It was developed with the need to meet a job requirement which was to write all requirements in Gherkin so they could be both requirement documentation and functional tests.
-
-# How it Works
-
-The pickler tool will parse your unit tests and convert them to Gherkin using this basic approach:
-
-```
 describe('As a user, I want to pickle my cucumbers, so that I can eat pickles', () => {
   // 🥒 Scenario: As a user, I want to pickle my cucumbers, so that I can eat pickles
 
@@ -45,21 +32,6 @@ describe('As a user, I want to pickle my cucumbers, so that I can eat pickles', 
       // 🥒 And I expect "ul.jar-contents" to contain "<li>1 tbsp of enzymes</li>"
       `<li>5 cucumbers</li>`
       // 🥒 And I expect "ul.jar-contents" to contain "<li>5 cucumbers</li>"
-    ])
+    ])).to.equal(true)
   })
 })
-```
-
-# Install
-
-```
-npm -g install pickler
-
-# or
-
-yarn global add pickler
-```
-
-# Usage
-
-See [man](bin/src/help.md)
