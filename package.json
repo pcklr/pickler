@@ -1,6 +1,6 @@
 {
   "name": "pickler",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Turn your Jest+Enzyme+React unit tests into Gherkin",
   "main": "dist/pickler.js",
   "module": "dist/pickler.es.js",
@@ -21,8 +21,7 @@
     "ci": "npm run test-coverage && codecov < coverage/coverage-remapped.lcov",
     "build": "git rev-parse HEAD > .commithash && rollup -c && chmod a+x bin/pickler",
     "watch": "rollup -cw",
-    "prepublishOnly": "exit; npm run lint && npm run test:only && npm run test:leak",
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
     "lint": "eslint src browser test/test.js test/*/index.js test/utils test/**/_config.js"
   },
   "author": "Ryan Schumacher <j.r.schumacher@gmail.com>",
@@ -51,5 +50,11 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-string": "^2.0.2",
     "yargs": "^10.0.3"
-  }
+  },
+  "files": [
+    "dist/pickler.js",
+    "bin/pickler",
+    "README.md"
+  ],
+  "dependencies": {}
 }
